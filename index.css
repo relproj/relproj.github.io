@@ -1,0 +1,93 @@
+body {
+	margin: 0;
+	font-family: "Noto Sans", sans-serif;
+}
+
+.nav-bar {
+	display: flex;
+	flex-direction: row-reverse;
+	background-color: black;
+	margin: 0 0 20px;
+}
+
+.nav-bar-entry {
+	padding: 1em 1.5em;
+	color: white;
+	font-weight: bold;
+	font-family: sans-serif;
+	cursor: pointer;
+}
+
+.nav-bar-entry:hover {
+	background-color: gray;
+}
+
+.content {
+	max-width: 1280px;
+	margin: auto;
+	height: 100%;
+	padding-right: 25px;
+	padding-left: 25px;
+}
+
+.page-title {
+	margin-top: 50px;
+	margin-bottom: 100px;
+}
+
+.block {
+	display: flex;
+	margin-bottom: 100px;
+}
+
+.block-left {
+	margin-right: 100px;
+}
+
+.block-right {
+	margin-left: 100px;
+}
+
+img {
+	max-width: 600px;
+	height: auto;
+}
+
+@media (max-width: 900px) {
+	.block {
+		flex-direction: column;
+		margin-bottom: 30px;
+	}
+
+	.content {
+		margin: 25px;
+	}
+
+	.block-left {
+		margin: 0;
+	}
+
+	.block-right {
+		margin: 0;
+	}
+
+	.block-right-marker :nth-child(1) {
+		order: 3;
+	}
+
+	.block-right-marker :nth-child(2) :nth-child(1) {
+		order: 1;
+	}
+
+	.block-right-marker :nth-child(2) :nth-child(2) {
+		order: 2;
+	}
+
+	.block-text {
+		margin-bottom: 15px;
+	}
+
+	.page-title {
+		margin-bottom: 50px;
+	}
+}
